@@ -1,0 +1,38 @@
+@import '../custom';
+
+input:not([type="checkbox"]){
+  direction: ltr;
+}
+
+input[type='text']{
+  direction: rtl;
+}
+
+.form-check .form-check-input{
+  float: none;
+  margin-left:0.5rem;
+
+}
+.was-validated .password-toggle .form-control:invalid, .was-validated .password-toggle .form-control.is-invalid, .was-validated .password-toggle .form-control:valid, .was-validated .password-toggle .form-control.is-valid {
+  padding-right: 4rem;
+}
+.password-toggle{
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: .625rem;
+  margin-bottom: 0;
+  padding: .5rem;
+  transform: translateY(-50%);
+  font-size: 1.0625rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.was-validated .password-toggle .form-control:invalid+.password-toggle-btn, .was-validated .password-toggle .form-control.is-invalid+.password-toggle-btn, .was-validated .password-toggle .form-control:valid+.password-toggle-btn, .was-validated .password-toggle .form-control.is-valid+.password-toggle-btn {
+  right: 2.1rem;
+}
+
+

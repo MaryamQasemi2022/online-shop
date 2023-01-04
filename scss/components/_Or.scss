@@ -1,0 +1,23 @@
+.or{
+  position: relative;
+  width: 55%;
+  margin: 1rem auto;
+  text-align: center;
+
+}
+.or::after ,.or::before{
+  content: "";
+  position: absolute;
+  top:50%;
+  width:45%;
+  height:1px;
+  background-color:black
+}
+.or::before{
+  right:0;
+  
+}
+.or::after{
+  left:0;
+  
+}
